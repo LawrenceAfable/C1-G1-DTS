@@ -1,0 +1,5 @@
+RUN THESE
+
+// different terminal
+npm run dev
+npx json-server --watch public/db.json --port 5000
