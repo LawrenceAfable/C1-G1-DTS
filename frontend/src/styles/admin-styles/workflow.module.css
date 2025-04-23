@@ -1,0 +1,42 @@
+.section1 {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+.item {
+    width: 90%;
+    padding-top: 90%; /* Creates a square by matching height to width */
+    background-color: aqua;
+    border: 1px solid black;
+}
+/* min-width, changes occur when screen exceed the min */
+@media (min-width: 400px) {
+    .section1 {
+        background-color: rgb(0, 255, 85);
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .section1 {
+        background-color: rgb(0, 255, 85);
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .section1 {
+        background-color: rgb(0, 255, 85);
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+/* @media (min-width: 400px) {
+    .section1 {
+        background-color: rgb(0, 255, 85);
+        grid-template-columns: auto auto;
+    }
+} */

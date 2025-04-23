@@ -1,0 +1,224 @@
+.ticket-detail-page {
+  margin: 0px 10vw;
+}
+
+.top-ticket-datail {
+  padding-top: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+  background-color: var(--primary-color);
+  border: 1px solid #ccc;
+  color: white;
+  font-size: 1rem;
+  /* padding: 8px 16px; */
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  gap: 8px;
+  transition: all 0.2s ease-in-out;
+  margin: 20px 0;
+  font-size: 12px;
+  width: 10%;
+}
+
+.bot-ticket-datail {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.left-ticket-details {
+  flex: 2;
+}
+
+.td-title-cont {
+  margin-bottom: 10px;
+}
+
+.td-title, 
+.td-subject{
+  /* background-color: blue; */
+  font-size: 22px;
+}
+
+.td-title-cont .td-meta {
+  font-size: 13px;
+}
+
+.td-description {
+  margin-bottom: 10px;
+}
+
+.td-description h3{
+  /* background-color: yellow; */
+  font-size: 16px;
+}
+
+.td-description p{
+  /* background-color: yellow; */
+  font-size: 13px;
+}
+
+.td-attachment {
+  margin-bottom: 10px;
+}
+
+.td-attachment h3{
+  /* background-color: violet; */
+  font-size: 16px;
+}
+
+.td-comment {
+  /* background-color: pink; */
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.td-commenter-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3498db;
+  flex-shrink: 0;
+}
+
+.comment-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.td-comment-section {
+  /* background-color: orange; */
+  display: flex;
+  gap: 10px;
+}
+
+.commenter-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3498db;
+  flex-shrink: 0;
+}
+
+.comment-content {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.commenter-name {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.comment-date {
+  font-size: 12px;
+}
+
+.comment-text {
+  font-size: 12px;
+}
+
+.comment-action {
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.right-ticket-details {
+  flex: 1;
+  /* background-color: red; */
+}
+
+.action-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.td-status-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.td-status-label,
+.td-status-badge{
+  font-size: 13px;
+}
+
+.td-status-badge {
+  background-color: var(--alert-color);
+  color: var(--background-color);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.td-info-item {
+  padding: 10px;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* background-color: aqua; */
+}
+
+.td-info-label-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.td-info-label,
+.td-info-value {
+  font-size: 13px;
+}
+
+.td-activity-log {
+  padding: 10px;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+}
+
+.td-activity-log-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.td-activity-log-content {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  /* .ticket-detail-page {
+    margin: 0 5vw;  
+  } */
+
+  .left-ticket-details, .right-ticket-details {
+    flex: 1 1 100%; /* Both will take full width on smaller screens */
+    min-width: unset;  /* Remove min-width constraint for better flow */
+  }
+}
+

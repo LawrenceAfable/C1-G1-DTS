@@ -1,0 +1,244 @@
+.paginationControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .paginationControls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .paginationControls button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+
+.main{
+    margin: 0 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: var(--table-font-size);
+}
+
+
+.section1, .section2, .section3, .section4{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.section1{
+}
+
+.section2_section3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.section2{
+
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+        .AnalyticsCardsContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            position: relative;
+            gap: 5%;
+        }
+        .AnalyticsCardsItem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* justify-content:center; */
+            border-radius: 4px; 
+            border: 1px solid grey;
+            overflow: hidden;
+        }
+        .AnalyticCardAccent {
+            padding: 20px;
+            background-color: var(--button-color);
+            height: 40px;
+        }
+        .wrapper {
+            width: 25%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .wrapper2 {
+            padding-left: 10%;
+            width: 75%;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+.section3{
+    justify-content: center;
+    align-items: center;
+}
+        .section3header {
+            display: flex;
+            gap: 5%;
+            flex-direction: row;
+        }
+        .dateselector{ 
+            height: 90%;
+            padding: 0px;
+            text-align: center;
+        }
+        .reviewwcontainer{
+
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 5%;
+            border: 1px solid grey;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .wrapper3 {
+            width: 10%;
+            height: 100%;
+            position: relative;
+            display: flex;
+        }
+        .wrapper4 {
+            width: 90%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .RecentTaskItem {
+            display: flex;
+            height: 50px;
+            flex-direction: row;
+            align-items: center;
+            /* justify-content:center; */
+            border-bottom: 1px solid grey;
+            overflow: hidden;
+        }
+        .RecentTaskItem:last-child{
+            border-bottom: none;
+        }
+        .RecentTaskAccent {
+            background-color: var(--button-color);
+            position: relative;
+            height: 100%;
+            width:  80%;
+        }
+
+.section4{
+    justify-content: center;
+    align-items: center;
+}
+        .section4header {
+            display: flex;
+            gap: 5%;
+            flex-direction: row;
+        }
+        .CardHeader{
+            padding-bottom: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .MonitorCardContainer {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+
+        .MonitorCardItem {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aliceblue;
+            height: 300px;
+        }
+
+        .MonitorCardItem2 {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: aliceblue;
+            height: 300px;
+        }
+
+
+        .wrapper5{
+            width: 90%;
+            position: relative;
+            display: flex;
+        }
+
+        .wrapper6{
+            width: 10%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+@media  (min-width: 900px) {
+    /* .MonitorCardContainer{
+        grid-template-columns: auto auto auto;
+    } */
+
+    .AnalyticCardAccent {
+        padding: 20px;
+        height: 80px;
+
+    }
+    
+    .AnalyticsCardsItem {
+        border-radius: 8px; 
+    }
+
+    .RecentTaskItem {
+        height: 40px;
+    }
+    .section2{
+
+        /* justify-content: center;
+        align-items: center; */
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section3{
+        position: relative;
+        width: 70%;
+    }
+    .section2_section3{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4%;
+    }
+}
+
+@media  (min-width: 1080px) {
+    /* .MonitorCardContainer{
+        grid-template-columns: auto auto auto;
+    } */
+    .AnalyticsCardsContainer {
+
+    }
+
+    
+}
