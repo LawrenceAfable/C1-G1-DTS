@@ -1,0 +1,60 @@
+.profile-modal-page {
+  position: absolute;
+  top: 60px;  
+  right: 20px;  
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 250px;
+  z-index: 10;
+  padding: 10px;
+}
+
+.pm-name-section {
+  display: flex;
+  margin: 10px 0;
+}
+
+.pm-name-section {
+  font-size: var(--table-head-size);
+}
+
+.pm-name {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.pm-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 10px;
+}
+
+.pm-acc-section,
+.pm-logout-section {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.pm-acc-section span,
+.pm-logout-section span {
+  font-size: var(--table-font-size);
+  color: var(--text-color);
+}
+
+.pm-acc-section:hover,
+.pm-logout-section:hover {
+  background-color: #ddd;;
+}
+
+
+.pm-icon {
+  font-size: var(--table-head-size);
+  color: var(--text-color);
+}

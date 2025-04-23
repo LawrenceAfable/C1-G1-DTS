@@ -8,7 +8,10 @@
       "priority": "Low",
       "status": "On Hold",
       "opened_on": "April 6, 2025",
-      "sla": "72 hours"
+      "sla": "72 hours",
+      "description": "Customer unable to log into account using correct credentials.",
+      "department": "Support",
+      "position": "IT Analyst"
     },
     {
       "id": 2,
@@ -18,7 +21,10 @@
       "priority": "Medium",
       "status": "In Progress",
       "opened_on": "April 6, 2025",
-      "sla": "24 hours"
+      "sla": "24 hours",
+      "description": "Customer reported failed payment transactions at checkout.",
+      "department": "Finance",
+      "position": "Payment Specialist"
     },
     {
       "id": 3,
@@ -28,7 +34,10 @@
       "priority": "High",
       "status": "On Hold",
       "opened_on": "April 7, 2025",
-      "sla": "48 hours"
+      "sla": "48 hours",
+      "description": "Customer did not receive email confirmation for order placed.",
+      "department": "Sales",
+      "position": "Order Manager"
     },
     {
       "id": 4,
@@ -38,7 +47,10 @@
       "priority": "Low",
       "status": "On Hold",
       "opened_on": "April 7, 2025",
-      "sla": "72 hours"
+      "sla": "72 hours",
+      "description": "Customer requested to return a recently purchased item.",
+      "department": "Logistics",
+      "position": "Return Coordinator"
     },
     {
       "id": 5,
@@ -48,7 +60,10 @@
       "priority": "High",
       "status": "In Progress",
       "opened_on": "April 8, 2025",
-      "sla": "24 hours"
+      "sla": "24 hours",
+      "description": "Customer reports that the main application server is unreachable.",
+      "department": "IT Operations",
+      "position": "Systems Engineer"
     },
     {
       "id": 6,
@@ -58,7 +73,10 @@
       "priority": "Medium",
       "status": "Approved",
       "opened_on": "April 8, 2025",
-      "sla": "48 hours"
+      "sla": "48 hours",
+      "description": "Customer suggested adding filters to dashboard reports.",
+      "department": "Product Management",
+      "position": "Product Owner"
     },
     {
       "id": 7,
@@ -68,7 +86,10 @@
       "priority": "Low",
       "status": "Rejected",
       "opened_on": "April 8, 2025",
-      "sla": "72 hours"
+      "sla": "72 hours",
+      "description": "Customer reported similar payment issues, already resolved previously.",
+      "department": "Finance",
+      "position": "Support Analyst"
     },
     {
       "id": 8,
@@ -78,7 +99,10 @@
       "priority": "High",
       "status": "On Hold",
       "opened_on": "April 9, 2025",
-      "sla": "48 hours"
+      "sla": "48 hours",
+      "description": "Customer unable to deactivate account due to system error.",
+      "department": "Support",
+      "position": "Account Manager"
     },
     {
       "id": 9,
@@ -88,7 +112,10 @@
       "priority": "Medium",
       "status": "In Progress",
       "opened_on": "April 9, 2025",
-      "sla": "24 hours"
+      "sla": "24 hours",
+      "description": "Customer claims they did not receive an invoice for recent order.",
+      "department": "Billing",
+      "position": "Accounts Specialist"
     },
     {
       "id": 10,
@@ -98,7 +125,10 @@
       "priority": "Low",
       "status": "Open",
       "opened_on": "April 10, 2025",
-      "sla": "72 hours"
+      "sla": "72 hours",
+      "description": "Customer has attempted login multiple times with no success.",
+      "department": "Support",
+      "position": "Tech Support Agent"
     }
   ]
 }

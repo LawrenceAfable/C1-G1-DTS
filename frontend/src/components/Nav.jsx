@@ -3,7 +3,13 @@ import '../styles/component-styles/nav.css';
 import {NavLink} from 'react-router-dom'
 import { useState } from 'react';
 
-export default function Nav() {
+export default function Nav({setOpenProfileModal}) {
+
+  const handleAvatarClick = () => {
+    setOpenProfileModal(prevState => !prevState)
+  }
+
+  // state for menu bar
   const [menuOpen, setMenuOpen] = useState(false); 
 
   const toggleMenu = () => {
@@ -41,9 +47,9 @@ export default function Nav() {
       <div className="user-section">
         <p>User Name</p> {/* hardcoded */}
         <div className="notif-bell">
-        <i className="fa fa-bell"></i>
+          <i className="fa fa-bell"></i>
         </div>
-        <div className="user-avatar"></div>
+        <div className="user-avatar" onClick={handleAvatarClick}></div>
       </div>
     </nav>
   )
