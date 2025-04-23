@@ -11,6 +11,8 @@ export default function AdminNav() {
     setMenuOpen(!menuOpen); 
   };
 
+  // similar logic from the regular Nav, just added admin variables in the nav.css
+
   return(
     <>
 
@@ -28,17 +30,17 @@ export default function AdminNav() {
 
       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <NavLink
-          to="/dashboard"
-          className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}>Dashboard</NavLink>
+          to="/admin"end
+          className={({isActive}) => (isActive ? 'admin-nav-link active' : 'admin-nav-link')}>Dashboard</NavLink>
         <NavLink
-          to="/ticket"
-          className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}>Ticket</NavLink>
+          to="/admin/agents"
+          className={({isActive}) => (isActive ? 'admin-nav-link active' : 'admin-nav-link')}>Agent</NavLink>
         <NavLink
-          to="/track"
-          className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}>Track</NavLink>
+          to="/admin/workflow"
+          className={({isActive}) => (isActive ? 'admin-nav-link active' : 'admin-nav-link')}>Workflow</NavLink>
         <NavLink
-          to="/archive"
-          className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}>Archive</NavLink>
+          to="/admin/archive"
+          className={({isActive}) => (isActive ? 'admin-nav-link active' : 'admin-nav-link')}>Archive</NavLink>
       </div> {/* nav links  */}
 
       <div className="user-section">

@@ -15,7 +15,12 @@
 }
 
 .admin-nav {
-  background-color: aqua;
+  background-color: var(--button-color) ;
+  color: var(--background-color);
+  text-align: right;
+  padding: 2px 20px;
+  font-size: var(--table-font-size);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .logo-section {
@@ -55,9 +60,29 @@
   color: var(--primary-color);
 }
 
+
 .nav-link.active {
   color: var(--background-color);
   background-color: var(--primary-color);
+}
+
+.admin-nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--default-font-size);
+  transition: color 0.2s ease;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.admin-nav-link:hover {
+  color: var(--button-color);
+}
+
+
+.admin-nav-link.active {
+  color: var(--background-color);
+  background-color: var(--button-color);
 }
 
 .user-section {

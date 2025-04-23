@@ -25,9 +25,7 @@ function AdminDashboard() {
 
         <div className={styles.main}>            
             <div className={styles.section1}>
-                <span className={styles.text}>admin / user</span>
-                <h3>Overview</h3>
-                <hr/>
+
             </div>
             <br/>
             <div className={styles.section2_section3}>

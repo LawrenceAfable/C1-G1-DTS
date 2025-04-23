@@ -100,5 +100,228 @@
       "opened_on": "April 10, 2025",
       "sla": "72 hours"
     }
+  ],
+  "agents": [
+    {
+      "ID": 101,
+      "Name": "Alice Johnson",
+      "Email": "alice.johnson@dms.example.com",
+      "Phone": "+1-555-0101",
+      "Role": "Manager",
+      "Status": "Active",
+      "HireDate": "2020-06-15",
+      "LastLogin": "2025-04-21T14:33:00",
+      "Location": "New York, NY"
+    },
+    {
+      "ID": 102,
+      "Name": "Bob Smith",
+      "Email": "bob.smith@dms.example.com",
+      "Phone": "+1-555-0102",
+      "Role": "Support Agent",
+      "Status": "Pending",
+      "HireDate": "2021-01-10",
+      "LastLogin": null,
+      "Location": "Austin, TX"
+    },
+    {
+      "ID": 103,
+      "Name": "Carol Lee",
+      "Email": "carol.lee@dms.example.com",
+      "Phone": "+1-555-0103",
+      "Role": "Administrator",
+      "Status": "Active",
+      "HireDate": "2019-11-05",
+      "LastLogin": "2025-04-22T09:15:00",
+      "Location": "San Francisco, CA"
+    },
+    {
+      "ID": 104,
+      "Name": "David Kim",
+      "Email": "david.kim@dms.example.com",
+      "Phone": "+1-555-0104",
+      "Role": "Support Agent",
+      "Status": "Suspended",
+      "HireDate": "2022-03-22",
+      "LastLogin": "2025-03-30T11:20:00",
+      "Location": "Chicago, IL"
+    },
+    {
+      "ID": 105,
+      "Name": "Eva Martínez",
+      "Email": "eva.martinez@dms.example.com",
+      "Phone": "+1-555-0105",
+      "Role": "Support Agent",
+      "Status": "Active",
+      "HireDate": "2020-09-18",
+      "LastLogin": "2025-04-20T17:45:00",
+      "Location": "Miami, FL"
+    },
+    {
+      "ID": 106,
+      "Name": "Frank Zhao",
+      "Email": "frank.zhao@dms.example.com",
+      "Phone": "+1-555-0106",
+      "Role": "Support Agent",
+      "Status": "Pending",
+      "HireDate": "2021-05-30",
+      "LastLogin": null,
+      "Location": "Seattle, WA"
+    },
+    {
+      "ID": 107,
+      "Name": "Grace Hopper",
+      "Email": "grace.hopper@dms.example.com",
+      "Phone": "+1-555-0107",
+      "Role": "Administrator",
+      "Status": "Active",
+      "HireDate": "2018-12-01",
+      "LastLogin": "2025-04-23T08:00:00",
+      "Location": "Boston, MA"
+    },
+    {
+      "ID": 108,
+      "Name": "Hannah Nguyen",
+      "Email": "hannah.nguyen@dms.example.com",
+      "Phone": "+1-555-0108",
+      "Role": "Support Agent",
+      "Status": "Active",
+      "HireDate": "2019-07-11",
+      "LastLogin": "2025-04-22T19:10:00",
+      "Location": "Denver, CO"
+    },
+    {
+      "ID": 109,
+      "Name": "Ian Wright",
+      "Email": "ian.wright@dms.example.com",
+      "Phone": "+1-555-0109",
+      "Role": "Support Agent",
+      "Status": "Suspended",
+      "HireDate": "2022-01-25",
+      "LastLogin": "2025-02-14T12:05:00",
+      "Location": "Atlanta, GA"
+    },
+    {
+      "ID": 110,
+      "Name": "Jasmine Patel",
+      "Email": "jasmine.patel@dms.example.com",
+      "Phone": "+1-555-0110",
+      "Role": "Manager",
+      "Status": "Active",
+      "HireDate": "2019-03-08",
+      "LastLogin": "2025-04-21T21:30:00",
+      "Location": "Los Angeles, CA"
+    },
+    {
+      "ID": 101,
+      "Name": "Alice Johnson",
+      "Email": "alice.johnson@dms.example.com",
+      "Phone": "+1-555-0101",
+      "Role": "Manager",
+      "Status": "Active",
+      "HireDate": "2020-06-15",
+      "LastLogin": "2025-04-21T14:33:00",
+      "Location": "New York, NY"
+    },
+    {
+      "ID": 102,
+      "Name": "Bob Smith",
+      "Email": "bob.smith@dms.example.com",
+      "Phone": "+1-555-0102",
+      "Role": "Support Agent",
+      "Status": "Pending",
+      "HireDate": "2021-01-10",
+      "LastLogin": null,
+      "Location": "Austin, TX"
+    },
+    {
+      "ID": 103,
+      "Name": "Carol Lee",
+      "Email": "carol.lee@dms.example.com",
+      "Phone": "+1-555-0103",
+      "Role": "Administrator",
+      "Status": "Active",
+      "HireDate": "2019-11-05",
+      "LastLogin": "2025-04-22T09:15:00",
+      "Location": "San Francisco, CA"
+    },
+    {
+      "ID": 104,
+      "Name": "David Kim",
+      "Email": "david.kim@dms.example.com",
+      "Phone": "+1-555-0104",
+      "Role": "Support Agent",
+      "Status": "Suspended",
+      "HireDate": "2022-03-22",
+      "LastLogin": "2025-03-30T11:20:00",
+      "Location": "Chicago, IL"
+    },
+    {
+      "ID": 105,
+      "Name": "Eva Martínez",
+      "Email": "eva.martinez@dms.example.com",
+      "Phone": "+1-555-0105",
+      "Role": "Support Agent",
+      "Status": "Active",
+      "HireDate": "2020-09-18",
+      "LastLogin": "2025-04-20T17:45:00",
+      "Location": "Miami, FL"
+    },
+    {
+      "ID": 106,
+      "Name": "Frank Zhao",
+      "Email": "frank.zhao@dms.example.com",
+      "Phone": "+1-555-0106",
+      "Role": "Support Agent",
+      "Status": "Pending",
+      "HireDate": "2021-05-30",
+      "LastLogin": null,
+      "Location": "Seattle, WA"
+    },
+    {
+      "ID": 107,
+      "Name": "Grace Hopper",
+      "Email": "grace.hopper@dms.example.com",
+      "Phone": "+1-555-0107",
+      "Role": "Administrator",
+      "Status": "Active",
+      "HireDate": "2018-12-01",
+      "LastLogin": "2025-04-23T08:00:00",
+      "Location": "Boston, MA"
+    },
+    {
+      "ID": 108,
+      "Name": "Hannah Nguyen",
+      "Email": "hannah.nguyen@dms.example.com",
+      "Phone": "+1-555-0108",
+      "Role": "Support Agent",
+      "Status": "Active",
+      "HireDate": "2019-07-11",
+      "LastLogin": "2025-04-22T19:10:00",
+      "Location": "Denver, CO"
+    },
+    {
+      "ID": 109,
+      "Name": "Ian Wright",
+      "Email": "ian.wright@dms.example.com",
+      "Phone": "+1-555-0109",
+      "Role": "Support Agent",
+      "Status": "Suspended",
+      "HireDate": "2022-01-25",
+      "LastLogin": "2025-02-14T12:05:00",
+      "Location": "Atlanta, GA"
+    },
+    {
+      "ID": 110,
+      "Name": "Jasmine Patel",
+      "Email": "jasmine.patel@dms.example.com",
+      "Phone": "+1-555-0110",
+      "Role": "Manager",
+      "Status": "Active",
+      "HireDate": "2019-03-08",
+      "LastLogin": "2025-04-21T21:30:00",
+      "Location": "Los Angeles, CA"
+    }
   ]
+  
 }

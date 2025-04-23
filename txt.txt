@@ -1,5 +1,8 @@
+``````
 RUN THESE
 
 // different terminal
 npm run dev
-npx json-server --watch public/db.json --port 5000
+npx json-server --watch public/db.json --port 5000 --host 0.0.0.0
+
+``````

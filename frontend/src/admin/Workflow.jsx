@@ -1,20 +1,17 @@
 import styles from '../styles/admin-styles/workflow.module.css'
 
+import AdminNav from "../components/AdminNav";
+import { TitleCards } from './components/General';
+
 function Workflow() {
     return (
         <>
-        <h1>I am workflow2</h1>
-        <div className={styles.section1}>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-            <div className={styles.item}></div>
-        </div>
+        <AdminNav/>
+        <section>
+            <TitleCards
+            user='jessa'
+            title='Workflow'/>
+        </section>
         </>
     )
 }
