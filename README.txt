@@ -7,12 +7,23 @@ npx json-server --watch public/db.json --port 5000
 - react-router-dom
 - font-awesome 
 
-
 # To create.env
 cd frontend
-cp .env
-add to env
-VITE_TICKET_API=http://192.168.100.6:5000/tickets
-VITE_WORKFLOW_API=http://192.168.100.6:5000/workflow
-VITE_ARCHIVE_API=http://192.168.100.6:5000/archive
+cp .env.example .env
 
+# Default port is now :1000, i.e. localhost:1000
+To modify, edit vite.config.json
+
+# Admin File Structing
+- Navbar Component is inserted directly on the page
+- pages/admin is the main admin directory
+        -   components
+        -   tables
+    - Agents.jsx
+    - archive.jsx
+    - Dashboard.jsx
+    - Workflow.jsx
+- CSS Styles in admin-Styles
+- Has added general-styles for general applications of styling
+
+- has used index.css for global styles
