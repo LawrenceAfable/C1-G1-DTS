@@ -1,9 +1,14 @@
-import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import "../../styles/agent-styles/ticket-detail.css";
 
+import "../../components/TicketAction"
+import TicketAction from '../../components/TicketAction';
+
 function TicketDetail() {
+
+  // open ticket action modal
+  const [openTicketAction, setOpenTicketAction] = useState(false);
 
   // navigate back
   const navigate = useNavigate();
@@ -12,7 +17,7 @@ function TicketDetail() {
   const [ticket, setTicket] = useState(null);
 
   useEffect(() => {
-    const fetchticket= async () => {
+      const fetchticket= async () => {
       const response= await fetch(`http://localhost:5000/tickets?ticket_id=${id}`)
       const data = await response.json()
       setTicket(data[0]);
@@ -24,11 +29,14 @@ function TicketDetail() {
   if (!ticket) return <p>Loading...</p>;
   return(
     <div className="ticket-detail-page">
+      {/* Modal */}
+      {openTicketAction && <div className="ticket-action-section">
+        <TicketAction closeTicketAction={setOpenTicketAction} />
+      </div> } {/* left ticket details */}
       <div className="top-ticket-datail">
         <button className="back-button" onClick={() => navigate(-1)}>Back
         </button>
       </div> {/* top */}
-
       <div className="bot-ticket-datail">
         <div className="left-ticket-details">
           <div className="td-title-cont">
@@ -41,7 +49,7 @@ function TicketDetail() {
           </div>
           <div className="td-description">
             <h3>Description</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, consequatur? Soluta aliquid perspiciatis minima ipsum molestiae laboriosam quisquam! Error unde a assumenda velit nulla illum, eaque non fuga nam. At!</p>
+            <p>{ticket.description}</p>
           </div>
           <div className="td-attachment">
             <h3>Attachment</h3>
@@ -71,7 +79,8 @@ function TicketDetail() {
         </div> {/* left ticket details */}
 
         <div className="right-ticket-details">
-          <button class="action-button">Make an Action</button>
+          <button class="action-button" onClick={() => {setOpenTicketAction(true); handleView(ticket.ticket_id); }}>
+            Make an Action</button>
           <div className="td-status-card">
             <div class="td-status-label">Status:</div>
             <div class="td-status-badge">{ticket.status}</div>
@@ -87,11 +96,11 @@ function TicketDetail() {
             </div>
             <div className="td-info-label-value">
               <div className="td-info-label">Department</div>
-              <div className="td-info-value">None</div>
+              <div className="td-info-value">{ticket.department}</div>
             </div>
             <div className="td-info-label-value">
               <div className="td-info-label">Position</div>
-              <div className="td-info-value">None</div>
+              <div className="td-info-value">{ticket.position}</div>
             </div>
             <div className="td-info-label-value">
               <div className="td-info-label">SLA</div>

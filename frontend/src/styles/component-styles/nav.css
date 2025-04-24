@@ -60,29 +60,9 @@
   color: var(--primary-color);
 }
 
-
 .nav-link.active {
   color: var(--background-color);
   background-color: var(--primary-color);
-}
-
-.admin-nav-link {
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: var(--default-font-size);
-  transition: color 0.2s ease;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
-.admin-nav-link:hover {
-  color: var(--button-color);
-}
-
-
-.admin-nav-link.active {
-  color: var(--background-color);
-  background-color: var(--button-color);
 }
 
 .user-section {
@@ -106,6 +86,7 @@
   height: 25px;
   background-color: gray;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .hamburger {
