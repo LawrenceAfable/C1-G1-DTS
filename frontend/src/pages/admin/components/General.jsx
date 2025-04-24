@@ -1,5 +1,5 @@
-import styles from '../../styles/general-styles/general-layout.module.css';
-import texts from '../../styles/general-styles/general-text.module.css';
+import form from '../../../styles/general-styles/general-form.module.css';
+import texts from '../../../styles/general-styles/general-text.module.css';
 
 export function TitleCards(props) {
     return (
@@ -13,17 +13,17 @@ export function TitleCards(props) {
 
 export function SearchBar(props) {
     return (
-        <div className="archive-page-search-cont">
+        <div className={form.SearchBarContainer}>
             <input type="text" placeholder="Search by ticket ID or keywords..." />  
-            <button className="archive-search-button">Filter</button>
+            <button>Filter</button>
         </div>
     )
 }
 
 export function Dropdown(props) {
     return(
-        <div>
-        <select id="time-period" className={styles.dateselector}>
+        <div className={form.dropdown}>
+        <select id="time-period">
             <option value="this-month">This Month</option>
             <option value="last-month">Last Month</option>
             <option value="quarter">Last Quarter</option>

@@ -1,4 +1,4 @@
-import AdminNav from "../components/AdminNav";
+import AdminNav from "../../components/AdminNav";
 
 import { TitleCards } from "./components/General";
 

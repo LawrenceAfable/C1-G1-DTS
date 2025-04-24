@@ -1,3 +1,6 @@
 .title {
+    font-size: var(--default-font-size);
+}
+.content {
     font-size: var(--table-font-size);
 }

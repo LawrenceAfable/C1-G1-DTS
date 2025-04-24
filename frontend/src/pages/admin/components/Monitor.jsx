@@ -1,5 +1,3 @@
-import styles from '../../styles/admin-styles/monitor.module.css'
-
 export function TotalTickets(props) {
     return (
         <div>

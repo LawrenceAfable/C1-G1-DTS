@@ -1,4 +1,4 @@
-import styles from '../../styles/admin-styles/adminstyle.module.css'
+import styles from '../../../styles/admin-styles/adminstyle.module.css'
 
 // learn
 // seperate the page css to the component css

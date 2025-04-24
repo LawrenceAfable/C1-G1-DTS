@@ -2,15 +2,15 @@
 import axios from "axios";
 
 // styles import
-import styles from '../styles/admin-styles/adminstyle.module.css'
-import "../styles/agent-styles/dashboard.css";
+import styles from '../../styles/admin-styles/adminstyle.module.css'
+import "../../styles/agent-styles/dashboard.css";
 import { ForReviewTable } from "./components/datadisplay";
 
 
 // component imports
 import { AnalyticsCards, RecentTask, MonitorCard, Dropdown, MonitorCard2 } from "./components/DashboardComponents";
 import { TotalTickets } from './components/Monitor';
-import AdminNav from "../components/AdminNav";
+import AdminNav from "../../components/AdminNav";
 
 function AdminDashboard() {
     return (

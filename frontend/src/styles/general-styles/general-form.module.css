@@ -1,0 +1,59 @@
+.SearchBarContainer {
+    background-color: red;
+    border: 1px solid black;
+}
+.dropdown {
+    background-color: red;
+    border: 1px solid black;
+}
+
+:root {
+  --btn-padding: 0.5rem 1rem;
+  --btn-font-size: 1rem;
+  --btn-font-weight: 500;
+  --btn-border-width: 2px;
+  --btn-color: #007bff;
+  --btn-color-hover: #0056b3;
+  --btn-radius: 4px;
+  --btn-disabled-opacity: 0.6;
+  --btn-transition: background-color 0.2s ease;
+}
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border: var(--btn-border-width) solid var(--btn-color);
+  background-color: var(--btn-color);
+  color: white;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: var(--btn-transition);
+}
+
+.btn:hover:not(:disabled) {
+  background-color: var(--btn-color-hover);
+}
+
+.btn:disabled {
+  opacity: var(--btn-disabled-opacity);
+  cursor: not-allowed;
+}
+
+/* Rectangular button (default) */
+.recbutton {
+  /* no overrides needed—inherits .btn */
+}
+
+/* Circular button */
+.circlebutton {
+  border-radius: 50%;
+  /* ensure equal width/height */
+  width: 50px;
+  height: 50px;
+  padding: 0; /* override padding so content centers */
+}

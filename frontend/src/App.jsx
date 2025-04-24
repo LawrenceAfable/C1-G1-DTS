@@ -15,10 +15,10 @@ import Login from './pages/auth/Login'
 import NotFound from './pages/error/NotFound'; 
 
 // admin
-import AdminDashboard from './admin/Dashboard'
-import Agents from './admin/Agents'
-import Workflow from './admin/Workflow'
-import AdminArchive from './admin/Archive'
+import AdminDashboard from './pages/admin/Dashboard'
+import Agents from './pages/admin/Agents'
+import Workflow from './pages/admin/Workflow'
+import AdminArchive from './pages/admin/Archive'
 
 // designs
 import 'font-awesome/css/font-awesome.min.css';
