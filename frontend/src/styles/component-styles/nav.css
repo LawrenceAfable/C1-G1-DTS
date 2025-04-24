@@ -62,7 +62,30 @@
 
 .nav-link.active {
   color: var(--background-color);
-  background-color: var(--primary-color);
+  background-color: var(--admin-color);
+}
+
+.admin-nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.admin-nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: var(--default-font-size);
+  transition: color 0.2s ease;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.admin-nav-link:hover {
+  color: var(--admin-color);
+}
+
+.admin-nav-link.active {
+  color: var(--background-color);
+  background-color: var(--admin-color);
 }
 
 .user-section {

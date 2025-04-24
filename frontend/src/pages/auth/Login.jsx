@@ -30,6 +30,7 @@ function Login() {
                 <a href="#">Forgot password?</a>
               </div>
              <button className="login-btn">Log In</button>
+             <a href="/admin">Login as admin</a>
             </form> {/* forms */}
           </div> {/* bot inputs */}
         </div>

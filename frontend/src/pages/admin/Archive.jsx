@@ -6,7 +6,7 @@ function AdminArchive() {
     return (
         <>
         <AdminNav/>
-
+        
         <section>
             <TitleCards
             user='jessa'

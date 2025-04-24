@@ -7,7 +7,9 @@
     overflow: hidden;
     background-color: white;
 }
-
+.tablewrapper {
+    min-height: 540px;
+}
 .table{
     align-content: center;
     justify-content: center;
@@ -21,11 +23,12 @@
     font-size: var(--table-font-size);
     text-align: left;
     padding: 12px 15px;
+    align-items: center;
   }
 
 .th {
     font-size: var(--table-font-size);
-    color: var(--text-color);
+    color: rgb(51, 50, 63);
     text-align: left;
     position: sticky;
     top: 0;
@@ -34,6 +37,7 @@
 
 .tr{
     font-size: var(--title-font-size);
+    border-bottom: 1px solid grey;
 }
 
 .tr:hover{

@@ -1,7 +1,7 @@
 /* for universal layouts */
 
 .main{
-    margin: 0 8vw;
+    margin: var(--mainpagewidth);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

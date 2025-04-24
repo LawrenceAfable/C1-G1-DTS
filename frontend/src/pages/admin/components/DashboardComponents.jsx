@@ -1,4 +1,5 @@
 import styles from '../../../styles/admin-styles/adminstyle.module.css'
+import form from '../../../styles/general-styles/general-form.module.css'
 
 // learn
 // seperate the page css to the component css
@@ -140,13 +141,13 @@ export function Dropdown() {
 
 export function Pagination({ currentPage, totalPages, setCurrentPage }) {
     return (
-      <div className={styles.paginationControls}>
+      <div  className={styles.paginationControls}>
         <button
-        className={styles.text}
+        className={`${form.circlebutton} ${form.btn}`}
           disabled={currentPage === 1}
           onClick={() => setCurrentPage((prev) => prev - 1)}
         >
-          Previous
+            {'<'}
         </button>
   
         <span className={styles.text}>
@@ -154,12 +155,12 @@ export function Pagination({ currentPage, totalPages, setCurrentPage }) {
         </span>
   
         <button
-        className={styles.text}
+        className={`${form.circlebutton} ${form.btn}`}
           disabled={currentPage === totalPages}
           onClick={() => setCurrentPage((prev) => prev + 1)}
         >
-          Next
+            {'>'}
         </button>
       </div>
     );
-  }
+}

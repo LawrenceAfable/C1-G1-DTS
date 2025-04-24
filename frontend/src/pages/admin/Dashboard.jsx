@@ -3,8 +3,9 @@ import axios from "axios";
 
 // styles import
 import styles from '../../styles/admin-styles/adminstyle.module.css'
+import layout from '../../styles/general-styles/general-layout.module.css'
 import "../../styles/agent-styles/dashboard.css";
-import { ForReviewTable } from "./components/datadisplay";
+import ForReviewTable from "./tables/ForReviewTable";
 
 
 // component imports
@@ -23,7 +24,7 @@ function AdminDashboard() {
             </div>
         </section> {/* top */}
 
-        <div className={styles.main}>            
+        <div className={layout.main}>            
             <div className={styles.section1}>
 
             </div>

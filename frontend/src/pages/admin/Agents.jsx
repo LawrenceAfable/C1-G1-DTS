@@ -5,7 +5,7 @@ import layout from '../../styles/general-styles/general-layout.module.css'
 // component
 import AdminNav from "../../components/AdminNav";
 import { SearchBar, Dropdown} from "./components/General";
-import { AgentTable, AgentItem} from './components/datadisplay';
+import AgentTable from './tables/AgentTable';
 
 
 // components

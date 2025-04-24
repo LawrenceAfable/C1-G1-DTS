@@ -3,55 +3,17 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 // styles import
-import styles from '../../../styles/admin-styles/adminstyle.module.css';
 import layout from '../../../styles/general-styles/general-layout.module.css';
 import table from '../../../styles/general-styles/general-table.module.css';
-import text from '../../../styles/general-styles/general-text.module.css';
+import form from '../../../styles/general-styles/general-form.module.css';
+
+// Api Import
 const ticketURL = import.meta.env.VITE_TICKET_API;
 
 // component import
-import { RecentTask, Pagination} from "./DashboardComponents";
-import { SearchBar, Dropdown } from "./General";
+import { Pagination } from "../components/DashboardComponents";
+import { SearchBar, Dropdown } from "../components/General";
 
-
-export function ForReviewTable() {
-    const [tickets, setTickets] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6;
-    useEffect(() => {
-      axios.get(`${ticketURL}`)
-        .then((response) => {
-          setTickets(response.data);
-        })
-        .catch((error) => {
-          console.error("Failed to fetch tickets", error);
-        });
-    }, []);
-  
-    // Calculate pagination
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentTickets = tickets.slice(indexOfFirstItem, indexOfLastItem);
-  
-    const totalPages = Math.ceil(tickets.length / itemsPerPage);
-  
-    return (
-      <div>
-        <div className={styles.reviewwcontainer}>
-          {currentTickets.map((ticket) => (
-            <RecentTask key={ticket.id} text={ticket.subject} />
-          ))}
-          <Pagination 
-          currentPage={currentPage} 
-          totalPages={totalPages} 
-          setCurrentPage={setCurrentPage}
-          />
-          
-        </div>
-      </div>
-      
-    );
-  }
 
 function AgentHeader() {
   return(
@@ -81,7 +43,7 @@ export function AgentItem(props) {
       <td className={table.td}>{props.Status}</td>
       <td className={table.td}>{props.LastLogin || '—'}</td>
       <td className={table.td}>
-        <button className={table.tablebutton}>
+        <button className={form.btn}>
           Manage
         </button>
       </td>
@@ -89,7 +51,7 @@ export function AgentItem(props) {
   )
 }
 
-export function AgentTable() {
+function AgentTable() {
   const [agents, setAgents] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 7; // rows per page
@@ -117,15 +79,11 @@ export function AgentTable() {
 
   return (
     <div>
-      <div>
-        <SearchBar />
+      <div className={form.FormContainer}>
         <Dropdown />
+        <Dropdown />
+        <SearchBar />
       </div>
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        setCurrentPage={setCurrentPage}
-      />
       <br/>
 
       <div className={table.tablewrapper}>
@@ -149,8 +107,15 @@ export function AgentTable() {
           </tbody>
         </table>
       </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        setCurrentPage={setCurrentPage}
+      />
 
       {/* Pagination controls */}
     </div>
   );
 }
+
+export default AgentTable;
