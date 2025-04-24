@@ -13,3 +13,12 @@ const ticketURL = import.meta.env.VITE_TICKET_API;
 // component import
 import { Pagination } from "../components/DashboardComponents";
 import { SearchBar, Dropdown } from "../components/General";
+
+function WorkFlowTable() {
+    return(
+        <></>
+    )
+
+}
+
+export default WorkFlowTable
