@@ -352,6 +352,284 @@
       "LastLogin": "2025-04-21T21:30:00",
       "Location": "Los Angeles, CA"
     }
+  ],
+  "workflow": [
+      {
+        "name": "Employee Onboarding",
+        "department": "Human Resources",
+        "description": "Handles onboarding for new employees."
+      },
+      {
+        "name": "IT Ticket Resolution",
+        "department": "IT Support",
+        "description": "Tracks the resolution of technical support tickets."
+      },
+      {
+        "name": "Marketing Campaign Launch",
+        "department": "Marketing",
+        "description": "Coordinates tasks for launching a new campaign."
+      },
+      {
+        "name": "Quarterly Budget Review",
+        "department": "Finance",
+        "description": "Reviews and finalizes departmental budgets quarterly."
+      },
+      {
+        "name": "New Vendor Approval",
+        "department": "Procurement",
+        "description": "Evaluates and approves new vendors for company use."
+      },
+      {
+        "name": "Product Development Sprint",
+        "department": "Engineering",
+        "description": "Manages product development sprints and tasks."
+      },
+      {
+        "name": "Client Onboarding",
+        "department": "Customer Success",
+        "description": "Guides new clients through onboarding steps."
+      },
+      {
+        "name": "Performance Review Cycle",
+        "department": "HR",
+        "description": "Organizes performance reviews for all employees."
+      },
+      {
+        "name": "Website Redesign",
+        "department": "Design",
+        "description": "Oversees redesign of the company website."
+      },
+      {
+        "name": "Data Privacy Audit",
+        "department": "Legal",
+        "description": "Conducts audits to ensure data privacy compliance."
+      },
+      {
+        "name": "Training Schedule",
+        "department": "Learning & Development",
+        "description": "Schedules and tracks employee training sessions."
+      },
+      {
+        "name": "Inventory Restock",
+        "department": "Operations",
+        "description": "Handles restocking inventory and supply chain checks."
+      },
+      {
+        "name": "Incident Management",
+        "department": "Risk Management",
+        "description": "Manages reporting and resolution of incidents."
+      },
+      {
+        "name": "Software License Renewal",
+        "department": "IT",
+        "description": "Tracks renewal of software licenses."
+      },
+      {
+        "name": "Remote Work Setup",
+        "department": "Admin",
+        "description": "Coordinates remote work equipment and access."
+      },
+      {
+        "name": "Internal Audit Process",
+        "department": "Compliance",
+        "description": "Steps for conducting internal audits."
+      },
+      {
+        "name": "Customer Feedback Loop",
+        "department": "Customer Experience",
+        "description": "Collects and processes customer feedback."
+      },
+      {
+        "name": "Annual Report Preparation",
+        "department": "Corporate Affairs",
+        "description": "Manages creation of the annual corporate report."
+      },
+      {
+        "name": "Sales Pipeline Review",
+        "department": "Sales",
+        "description": "Reviews progress and performance of sales pipelines."
+      },
+      {
+        "name": "Security Patch Deployment",
+        "department": "Cybersecurity",
+        "description": "Plans and executes deployment of security patches."
+      }
+  ],
+  "archive": [
+    {
+      "ticket_id": "TK-100302",
+      "subject": "Login page error",
+      "customer": "Acme Corp",
+      "status": "resolved",
+      "issued_on": "2025-01-02",
+      "resolved_on": "2025-01-03",
+      "resolved_by": "Alice Santos"
+    },
+    {
+      "ticket_id": "TK-100303",
+      "subject": "Cannot reset password",
+      "customer": "Beta Industries",
+      "status": "cancelled",
+      "issued_on": "2025-01-05",
+      "resolved_on": null,
+      "resolved_by": null
+    },
+    {
+      "ticket_id": "TK-100304",
+      "subject": "Data export failing",
+      "customer": "Gamma LLC",
+      "status": "resolved",
+      "issued_on": "2025-01-07",
+      "resolved_on": "2025-01-08",
+      "resolved_by": "Bob Reyes"
+    },
+    {
+      "ticket_id": "TK-100305",
+      "subject": "UI layout broken in Safari",
+      "customer": "Delta Co",
+      "status": "resolved",
+      "issued_on": "2025-01-10",
+      "resolved_on": "2025-01-11",
+      "resolved_by": "Carla Navarro"
+    },
+    {
+      "ticket_id": "TK-100306",
+      "subject": "Missing notification emails",
+      "customer": "Echo Ltd",
+      "status": "resolved",
+      "issued_on": "2025-01-12",
+      "resolved_on": "2025-01-13",
+      "resolved_by": "Alice Santos"
+    },
+    {
+      "ticket_id": "TK-100307",
+      "subject": "API timeout errors",
+      "customer": "Foxtrot Inc",
+      "status": "resolved",
+      "issued_on": "2025-01-15",
+      "resolved_on": "2025-01-16",
+      "resolved_by": "David Lim"
+    },
+    {
+      "ticket_id": "TK-100308",
+      "subject": "Unable to upload files",
+      "customer": "Golf Enterprises",
+      "status": "cancelled",
+      "issued_on": "2025-01-18",
+      "resolved_on": null,
+      "resolved_by": null
+    },
+    {
+      "ticket_id": "TK-100309",
+      "subject": "Slow page load",
+      "customer": "Hotel Group",
+      "status": "resolved",
+      "issued_on": "2025-01-20",
+      "resolved_on": "2025-01-21",
+      "resolved_by": "Carla Navarro"
+    },
+    {
+      "ticket_id": "TK-100310",
+      "subject": "Broken link on dashboard",
+      "customer": "India Co",
+      "status": "resolved",
+      "issued_on": "2025-01-22",
+      "resolved_on": "2025-01-23",
+      "resolved_by": "Bob Reyes"
+    },
+    {
+      "ticket_id": "TK-100311",
+      "subject": "Incorrect invoice total",
+      "customer": "Juliet Solutions",
+      "status": "resolved",
+      "issued_on": "2025-01-25",
+      "resolved_on": "2025-01-26",
+      "resolved_by": "Alice Santos"
+    },
+    {
+      "ticket_id": "TK-100312",
+      "subject": "Search results missing items",
+      "customer": "Kilo Logistics",
+      "status": "resolved",
+      "issued_on": "2025-01-28",
+      "resolved_on": "2025-01-29",
+      "resolved_by": "David Lim"
+    },
+    {
+      "ticket_id": "TK-100313",
+      "subject": "Error 500 on reports",
+      "customer": "Lima Ventures",
+      "status": "cancelled",
+      "issued_on": "2025-02-01",
+      "resolved_on": null,
+      "resolved_by": null
+    },
+    {
+      "ticket_id": "TK-100314",
+      "subject": "Session timeout too short",
+      "customer": "Mike & Co",
+      "status": "resolved",
+      "issued_on": "2025-02-03",
+      "resolved_on": "2025-02-04",
+      "resolved_by": "Carla Navarro"
+    },
+    {
+      "ticket_id": "TK-100315",
+      "subject": "Unable to export PDF",
+      "customer": "November Tech",
+      "status": "resolved",
+      "issued_on": "2025-02-06",
+      "resolved_on": "2025-02-07",
+      "resolved_by": "Bob Reyes"
+    },
+    {
+      "ticket_id": "TK-100316",
+      "subject": "Notifications duplicating",
+      "customer": "Oscar Labs",
+      "status": "cancelled",
+      "issued_on": "2025-02-09",
+      "resolved_on": null,
+      "resolved_by": null
+    },
+    {
+      "ticket_id": "TK-100317",
+      "subject": "Password complexity not enforced",
+      "customer": "Papa Retail",
+      "status": "resolved",
+      "issued_on": "2025-02-11",
+      "resolved_on": "2025-02-12",
+      "resolved_by": "Alice Santos"
+    },
+    {
+      "ticket_id": "TK-100318",
+      "subject": "Chart not rendering",
+      "customer": "Quebec Finance",
+      "status": "resolved",
+      "issued_on": "2025-02-14",
+      "resolved_on": "2025-02-15",
+      "resolved_by": "David Lim"
+    },
+    {
+      "ticket_id": "TK-100319",
+      "subject": "Exported CSV encoding issue",
+      "customer": "Romeo Services",
+      "status": "resolved",
+      "issued_on": "2025-02-17",
+      "resolved_on": "2025-02-18",
+      "resolved_by": "Bob Reyes"
+    },
+    {
+      "ticket_id": "TK-100320",
+      "subject": "Cannot change profile picture",
+      "customer": "Sierra Media",
+      "status": "resolved",
+      "issued_on": "2025-02-20",
+      "resolved_on": "2025-02-21",
+      "resolved_by": "Carla Navarro"
+    }
   ]
   
-}
+  }
+  
+  
+  

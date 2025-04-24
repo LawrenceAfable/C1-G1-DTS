@@ -1,0 +1,46 @@
+{
+    "workflow": {
+      "id": "WF-00123",
+      "name": "New Employee Onboarding",
+      "department": "Human Resources",
+      "description": "Manages the steps for onboarding a new hire from acceptance to full integration.",
+      "createdBy": "jane.doe@company.com",
+      "createdDate": "2025-04-24T10:15:00Z",
+      "lastModifiedBy": "john.smith@company.com",
+      "lastModifiedDate": "2025-04-24T12:00:00Z",
+      "status": "Active",
+      "priority": "High",
+      "version": "1.2",
+      "isAutomated": true,
+      "triggerEvent": "New hire accepted offer",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Send Welcome Email",
+          "assignedTo": "recruiter@company.com",
+          "dueDays": 1,
+          "status": "Pending"
+        },
+        {
+          "stepNumber": 2,
+          "title": "Set up IT Access",
+          "assignedTo": "it.support@company.com",
+          "dueDays": 3,
+          "status": "Pending"
+        }
+      ],
+      "approvers": [
+        "hr.manager@company.com",
+        "team.lead@company.com"
+      ],
+      "estimatedCompletionDays": 10,
+      "tags": ["onboarding", "HR", "new hire"],
+      "notificationsEnabled": true,
+      "requiresComplianceReview": false,
+      "linkedDocuments": [
+        "employee_handbook.pdf",
+        "nda_template.docx"
+      ]
+    }
+  }
+  

@@ -80,8 +80,6 @@ function App() {
           <DateBanner className="date-banner" />
         </>
       )}
-     {!hideHeader && <Nav setOpenProfileModal={setOpenProfileModal} setOpenNotifModal={setOpenNotifModal}/>}
-     {!hideHeader && <DateBanner />}
      {openProfileModal && <ProfileModal />}
      {openNotifModal && <NotifModal />}
 
