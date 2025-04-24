@@ -75,8 +75,9 @@
 .user-avatar {
   width: 25px;
   height: 25px;
-  background-color: gray;
+  object-fit: cover;
   border-radius: 50%;
+  flex-shrink: 0;
   cursor: pointer;
 }
 

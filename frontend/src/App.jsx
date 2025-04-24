@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 import Nav from './components/Nav'
 import DateBanner from './components/DateBanner'
 import ProfileModal from './components/ProfileModal' // Import the modal
+import NotifModal from './components/NotifModal';
 
 // pages
 import Dashboard from './pages/agent/Dashboard'
@@ -26,16 +27,21 @@ import './index.css'
 function App() {
 
   const location = useLocation();
-  const [openProfileModal, setOpenProfileModal] = useState(false); 
+  const [openProfileModal, setOpenProfileModal] = useState(false); // profile modal
+  const [openNotifModal, setOpenNotifModal] = useState(false); // notif modal
 
+
+  // modal close when route is change
   useEffect(() => {
     setOpenProfileModal(false);
+    setOpenNotifModal(false)
   }, [location])
 
   // modal close when the page is resize
   useEffect(() => {
     const handleResize = () => {
       setOpenProfileModal(false); 
+      setOpenNotifModal(false);
     };
 
     // event listener
@@ -51,9 +57,10 @@ function App() {
 
   return (
     <>
-     {!hideHeader && <Nav setOpenProfileModal={setOpenProfileModal}/>}
+     {!hideHeader && <Nav setOpenProfileModal={setOpenProfileModal} setOpenNotifModal={setOpenNotifModal}/>}
      {!hideHeader && <DateBanner />}
      {openProfileModal && <ProfileModal />}
+     {openNotifModal && <NotifModal />}
 
      <Routes>
       {/* Auth */}

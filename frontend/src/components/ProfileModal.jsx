@@ -1,7 +1,5 @@
-  import { use } from 'react';
 import '../styles/component-styles/profile-modal.css'
-
-  import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
   export default function ProfileModal() {
 
