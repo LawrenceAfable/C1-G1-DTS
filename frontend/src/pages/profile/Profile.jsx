@@ -8,7 +8,7 @@ export default function Profile() {
           <h1 className="profile-title">Profile</h1>
           <div className="profile-page-image-section">
             <div className="profile-page-image">
-              <img src="/placeholder-profile.jpg" alt="Profile" />
+              <img src="https://i.pinimg.com/736x/e6/50/7f/e6507f42d79520263d8d952633cedcf2.jpg" alt="Profile" />
             </div>
           </div>
           <div className="profile-page-info-section">
@@ -25,6 +25,7 @@ export default function Profile() {
             </div>
           </div>
         </section>
+        
         <section className="right-profile-page">
           <div className="profile-settings-card">
             <h3 className="section-title">Profile Settings</h3>

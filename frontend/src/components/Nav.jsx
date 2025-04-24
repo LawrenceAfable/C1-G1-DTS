@@ -3,11 +3,17 @@ import '../styles/component-styles/nav.css';
 import {NavLink} from 'react-router-dom'
 import { useState } from 'react';
 
-export default function Nav({setOpenProfileModal}) {
+export default function Nav({setOpenProfileModal, setOpenNotifModal}) {
 
   const handleAvatarClick = () => {
     setOpenProfileModal(prevState => !prevState)
+    setOpenNotifModal(false); // close notif modal if open
   }
+
+  const handleNotifClick = () => {
+    setOpenNotifModal(prev => !prev);
+    setOpenProfileModal(false); // close profile modal if open
+  };
 
   // state for menu bar
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -46,10 +52,10 @@ export default function Nav({setOpenProfileModal}) {
 
       <div className="user-section">
         <p>User Name</p> {/* hardcoded */}
-        <div className="notif-bell">
+        <div className="notif-bell" onClick={handleNotifClick}>
           <i className="fa fa-bell"></i>
         </div>
-        <div className="user-avatar" onClick={handleAvatarClick}></div>
+        <img className="user-avatar" src="https://i.pinimg.com/736x/e6/50/7f/e6507f42d79520263d8d952633cedcf2.jpg" alt="Anime Avatar"onClick={handleAvatarClick}></img>
       </div>
     </nav>
   )
