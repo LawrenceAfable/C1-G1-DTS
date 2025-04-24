@@ -62,7 +62,7 @@
 
 .nav-link.active {
   color: var(--background-color);
-  background-color: var(--admin-color);
+  background-color: var(--primary-color);
 }
 
 .admin-nav-links {
