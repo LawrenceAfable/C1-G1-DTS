@@ -1,4 +1,4 @@
-import "../../styles/error-styles/notfound.css"
+import "./NotFound.css"
 
 export default function NotFound() {
   return (
@@ -11,7 +11,7 @@ export default function NotFound() {
         
         <div className="notfound-image">
           <img
-            src="https://media1.tenor.com/m/cF8Z6aFHNY4AAAAd/i-show-speed-cristiano-ronaldo.gif"
+            src="../../../public/error.jpg"
             alt="404 Not Found"
           />
         </div>

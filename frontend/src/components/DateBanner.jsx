@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../styles/component-styles/datebanner.css'
+import './DateBanner.css'
 
 export default function DateBanner(props) {
   const [currentDate, setCurrentDate] = useState(new Date());

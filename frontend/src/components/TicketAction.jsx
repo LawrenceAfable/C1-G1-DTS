@@ -1,4 +1,4 @@
-import "../styles/component-styles/ticket-action.css";
+import "./TicketAction.css";
 
 export default function TicketAction({ closeTicketAction }) {
   

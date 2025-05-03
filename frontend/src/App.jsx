@@ -10,12 +10,14 @@ import DateBanner from './components/DateBanner'
 import ProfileModal from './components/ProfileModal' // Import the modal
 import NotifModal from './components/NotifModal';
 
-// pages
-import Dashboard from './pages/agent/Dashboard'
-import Ticket from './pages/agent/Ticket'
-import Track from './pages/agent/Track'
-import Archive from './pages/agent/Archive'
-import TicketDetail from './pages/agent/TicketDetail'
+// Agent Pages
+import Dashboard from './pages/agent/dashboard/Dashboard'
+import Ticket from './pages/agent/ticket/Ticket'
+import Track from './pages/agent/track/Track'
+import Archive from './pages/agent/archive/Archive'
+import TicketDetail from './pages/agent/ticket/TicketDetail'
+
+// 
 import Login from './pages/auth/Login'
 import NotFound from './pages/error/NotFound'; 
 import Profile from './pages/profile/Profile'
@@ -25,10 +27,10 @@ import 'font-awesome/css/font-awesome.min.css';
 import './index.css'
 
 // admin
-import AdminDashboard from './pages/admin/Dashboard'
-import Agents from './pages/admin/Agents'
-import Workflow from './pages/admin/Workflow'
-import AdminArchive from './pages/admin/Archive'
+import AdminDashboard from './pages/admin/dashboard/Dashboard'
+import Agents from './pages/admin/agents/Agents'
+import Workflow from './pages/admin/workflow/Workflow'
+import AdminArchive from './pages/admin/archive/Archive'
 
 function App() {
 

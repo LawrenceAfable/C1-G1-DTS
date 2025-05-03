@@ -1,4 +1,4 @@
-import '../styles/component-styles/notif-modal.css';
+import './NotifModal.css';
 
 export default function NotifModal() {
   return (

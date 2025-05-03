@@ -1,0 +1,95 @@
+.text{
+    font-size: var(--table-font-size);
+}
+
+/* Analytics Cards, i.e. the quick actions */
+
+.AnalyticsCardsItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content:center; */
+    border-radius: 4px; 
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+.AnalyticCardAccent {
+    padding: 20px;
+    background-color: var(--button-color);
+    height: 40px;
+}
+.wrapper {
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.wrapper2 {
+    padding-left: 10%;
+    width: 75%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Monitor Cards */
+.CardHeader{
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.MonitorCardItem {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 300px;
+}
+
+.MonitorCardItem2 {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 300px;
+}
+
+.wrapper5{
+    width: 90%;
+    position: relative;
+    display: flex;
+}
+
+.wrapper6{
+    width: 10%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media  (min-width: 900px) {
+    /* .MonitorCardContainer{
+        grid-template-columns: auto auto auto;
+    } */
+
+    .AnalyticCardAccent {
+        padding: 20px;
+        height: 80px;
+
+    }
+    
+    .AnalyticsCardsItem {
+        border-radius: 8px; 
+    }
+
+    .RecentTaskItem {
+        height: 40px;
+    }
+}
+
+@media  (min-width: 1080px) {
+}

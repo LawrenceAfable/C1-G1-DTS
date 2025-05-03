@@ -1,0 +1,12 @@
+.main{
+    margin: var(--mainpagewidth);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;   
+}

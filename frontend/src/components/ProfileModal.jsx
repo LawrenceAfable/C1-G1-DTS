@@ -1,4 +1,4 @@
-import '../styles/component-styles/profile-modal.css'
+import './ProfileModal.css'
 import { useNavigate } from 'react-router-dom';
 
   export default function ProfileModal() {

@@ -1,0 +1,87 @@
+.text{
+    font-size: var(--table-font-size);
+}
+
+
+.section1, .section2, .section3, .section4{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.section1{
+}
+
+.section2_section3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+
+.section2{
+    /* justify-content: center;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+        .AnalyticsCardsContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            position: relative;
+            gap: 5%;
+        }
+
+.section3{
+    justify-content: center;
+    align-items: center;
+}
+        .section3header {
+            display: flex;
+            gap: 5%;
+            flex-direction: row;
+        }
+    
+.section4{
+    justify-content: center;
+    align-items: center;
+}
+        .section4header {
+            display: flex;
+            gap: 5%;
+            flex-direction: row;
+        }
+        .CardHeader{
+            padding-bottom: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .MonitorCardContainer {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    
+@media  (min-width: 900px) {
+    .section2{
+        /* justify-content: center;
+        align-items: center; */
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section3{
+        position: relative;
+        width: 70%;
+    }
+    .section2_section3{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4%;
+    }
+}
+
+@media  (min-width: 1080px) {
+
+}

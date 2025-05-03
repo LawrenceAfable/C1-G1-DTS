@@ -1,0 +1,148 @@
+:root {
+  --btn-padding: 0.4rem 1.1rem;
+  --btn-font-size: 0.7rem;
+  --btn-font-weight: 500;
+  --btn-border-width: 1px;
+  --btn-radius: 4px;
+  --btn-color: var(--button-color);
+  --btn-color-hover: #0056b3;
+  --btn-disabled-opacity: 0.6;
+  --btn-transition: background-color 0.2s ease, transform 0.1s ease;
+
+  /* dropdown */
+  --dropdown-bg: #fff;
+  --dropdown-border: var(--search-border);
+  --dropdown-border-hover: var(--search-focus);
+  --dropdown-radius: var(--search-radius);
+  --dropdown-padding: 0.2rem 0.7rem;
+  --dropdown-transition: 0.2s ease;
+  --dropdown-shadow: rgba(0, 0, 0, 0.1);
+  --dropdown-shadow-hover: rgba(0, 0, 0, 0.15);
+  --dropdown-arrow-size: 0.75rem;
+  --dropdown-arrow-color: #000000;
+  
+  /* Searchbar */
+  --search-border: #ccc;
+  --search-focus: #007bff;
+  --search-hover: #999;
+  --search-radius: 4px;
+  --search-transition: 0.2s ease;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: var(--dropdown-padding);
+  font-size: 1rem;
+  color: #333;
+  background-color: var(--dropdown-bg);
+  border: 1px solid var(--dropdown-border);
+  border-radius: var(--dropdown-radius);
+  box-shadow: 0 2px 4px var(--dropdown-shadow);
+  transition: 
+    border-color var(--dropdown-transition), 
+    box-shadow var(--dropdown-transition),
+    transform 0.1s ease;
+  cursor: pointer;
+}
+
+/* Hover: elevate and change border */
+.dropdown:hover {
+  border-color: var(--dropdown-border-hover);
+  box-shadow: 0 4px 8px var(--dropdown-shadow-hover);
+  transform: translateY(-1px);
+}
+
+/* Focus: glowing outline */
+.dropdown:focus {
+  outline: none;
+  border-color: var(--dropdown-border-hover);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+
+
+/* If you wrap <select> in .dropdown container, target the select itself */
+.dropdown select {
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  appearance: none;
+}
+
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border: var(--btn-border-width) solid var(--btn-color);
+  background-color: var(--btn-color);
+  color: white;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  transition: var(--btn-transition);
+}
+
+.btn:hover:not(:disabled) {
+  background-color: var(--btn-color-hover);
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: var(--btn-disabled-opacity);
+  cursor: not-allowed;
+}
+
+.recbutton { 
+  /* Default rectangular button—no overrides needed */
+}
+
+.circlebutton {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0; /* Override padding for perfect circle */
+}
+
+/* -------- Search Input -------- */
+.FormContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.SearchBar {
+  border: 1px solid var(--search-border);
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--search-radius);
+  background-color: #fff;
+  transition: box-shadow var(--search-transition);
+}
+
+.SearchBar:hover {
+  box-shadow: 0 2px 8px rgba(11, 77, 68, 0.1);
+  border-color: #0056b3;
+}
+
+.SearchBar:focus{
+  border-color: red;
+}
+
+.SearchBar input[type="search"] {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--search-border);
+  border-radius: var(--search-radius);
+  transition: border-color var(--search-transition), box-shadow var(--search-transition);
+}
